@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Máfia da Batata | Cardápio</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-lilas shadow-lg">
+            <a class="navbar-brand" href="#">Máfia da Batata</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Ínicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn bg-amarelo" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Faça seu Pedido</button>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <!--Modal Pedidos-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Novo Pedido</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Seu Nome:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Pedido:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn bg-lilas text-white">Enviar</button>
+            </div>
+          </div>
+        </div>
+        <div class="contato">
+            <div class="wrapper">
+                <a href="#" onclick="javascript:abrirJanela('https://api.whatsapp.com/send/?phone=55618608-7569&text=Tenho+interesse+em+vossos+servi%C3%A7os%3B&app_absent=0', 400, 700);">
+                <img src="img/zap.png" alt="Logo WhatsApp">
+                </a>
+            </div>
+          </div>
+      </div>
+
+    <div id="principal">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+
+                <div class="col-md-6 d-flex justify-content-space-around">
+                    <div id="menu-mafia" class="shadow-lg">
+                        <img src="img/mafia-batata.png" alt="Máfia da Batata">
+                    </div>
+                </div>
+
+                <!-- direita -->
+                <div class="col-md-6 d-flex justify-content-space-around">
+                    <div id="precos-bebidas" class="shadow-lg">
+                        <img src="img/bebidas.png" alt="Preco Bebida">
+                    </div>
+                </div>
+                <!-- esquerda -->
+                
+                <!-- direita -->
+                
+                <!-- esquerda -->
+                <div class="col-md-6 d-flex justify-content-space-around">
+                    <div id="sabores-mafia" class="shadow-lg">
+                        <img src="img/sabores.png" alt="Sabores Logo">
+                    </div>
+                </div>
+                <!-- direita -->
+                <div class="col-md-6 d-flex justify-content-space-around">
+                    <div id="precos-adicionais" class="shadow-lg">
+                        <img src="img/adicionais.png" alt="Adicionais">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="contato">
+            <div class="wrapper">
+                <a href="#" onclick="javascript:abrirJanela('https://api.whatsapp.com/send/?phone=55618608-7569&text=Tenho+interesse+em+vossos+servi%C3%A7os%3B&app_absent=0', 400, 700);">
+                <img src="img/zap.png" alt="Logo WhatsApp">
+                </a>
+            </div>
+          </div>
+    </div>
+
+    <footer>
+        <div id="rodape" class="text-center text-white m-0 py-1">
+          <a href="https://www.uniplandf.edu.br/" class="text-center text-white m-0 py-1" style="text-decoration: none;" target="_blank">Desenvolvido por Gabriel Meneses - © Ensino Superior - UNIPLAN </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
